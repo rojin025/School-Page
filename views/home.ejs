@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
+<%- include("partials/head") %>
+
+    <%- include("partials/navbar")%>
     <h1>Home Page</h1>
     <p>EJS example <%= 3+ 3 %></p>
     <p>EJS example 2 <%= "Hello World".toUpperCase() %></p>
@@ -41,5 +36,5 @@
       totam aut. Ut eveniet voluptatum delectus dolorem ratione dolorum minima
       fuga quae.
     </p>
-  </body>
-</html>
+  
+    <%- include("partials/footer") %>

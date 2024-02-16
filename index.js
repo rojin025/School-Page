@@ -10,7 +10,7 @@ app.set("views", path.join(__dirname, "/views"));
 
 app.get("/", (req, res) => {
   const random = Math.floor(Math.random() * 10) + 1;
-  res.render("home", { randomNum: random });
+  res.render("home", { randomNum: random, title: "home" });
 });
 
 // Subreddit Demo
@@ -18,16 +18,16 @@ app.get("/r/:subreddit", (req, res) => {
   const { subreddit } = req.params;
   const data = redditData[subreddit];
   if (data) {
-    res.render("subreddit", { ...data });
+    res.render("subreddit", { ...data, title: subreddit });
   } else {
-    res.render("notfound", { subreddit });
+    res.render("notfound", { title: subreddit, subreddit });
   }
 });
 
 // Using array as database
-app.get("/aboutus", (req, res) => {
+app.get("/about", (req, res) => {
   const allFriends = ["Ram", "Shaym", "Suresh"];
-  res.render("aboutus", { friends: allFriends });
+  res.render("about", { friends: allFriends, title: "About" });
 });
 
 app.listen(3000, () => {
