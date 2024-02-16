@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <p>EJS example <%= 3+ 3 %></p>
+    <p>EJS example 2 <%= "Hello World".toUpperCase() %></p>
+    <div>
+      <h3>Random number is : <%= randomNum %></h3>
+      <h3><%= randomNum%2 === 0 ? "Even" : "Odd" %></h3>
+    </div>
+    <div>
+      <h3>Random : <%= randomNum %></h3>
+      <% if (randomNum % 2 === 0) { %>
+      <h2>Even</h2>
+      <% }else{ %>
+      <h2>Odd</h2>
+      <% } %>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ad nesciunt
+      soluta dignissimos molestias! Repudiandae mollitia assumenda quia eos
+      officiis sapiente dicta nam voluptatibus fugiat fuga voluptatem a, iste
+      sequi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas modi
+      obcaecati delectus facilis assumenda illum laborum architecto culpa a
+      quaerat, vel reiciendis qui corporis sunt eveniet saepe, quam atque
+      nulla?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi
+      sed ipsum, expedita maxime animi amet harum voluptatibus vitae vero cum
+      exercitationem illum iure nam! Nihil doloribus praesentium accusamus ad!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+      distinctio atque eum veritatis sint dignissimos, incidunt excepturi ipsa
+      totam aut. Ut eveniet voluptatum delectus dolorem ratione dolorum minima
+      fuga quae.
+    </p>
+  </body>
+</html>
