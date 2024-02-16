@@ -9,26 +9,22 @@
     <script src="/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div ></div>
     <nav class="navbar  navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">School Page</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="/views/about.ejs">About</a>
             <a class="nav-link" href="/r/compro">ComPro</a>
             <a class="nav-link" href="/r/msd">MSD</a>
             <a class="nav-link" href="/r/ayurveda">Ayurveda</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </div>
         </div>
-      </div>
     </nav>
+  </div class= "container">
     <h1><%= code %></h1>
     <h3><%= description %></h3>
     <h4><%= students %> Students</h4>
@@ -48,5 +44,6 @@
       totam aut. Ut eveniet voluptatum delectus dolorem ratione dolorum minima
       fuga quae.
     </p>
+  </div>
   </body>
 </html>
